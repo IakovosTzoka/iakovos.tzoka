@@ -265,19 +265,20 @@ body::before {
   max-width: 800px;
 }
 
-.hero__name {
+.hero-name {
   font-family: var(--font-display);
-  font-size: var(--text-hero);
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
   font-weight: 700;
   color: var(--color-text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   margin-bottom: var(--space-4);
-  line-height: 1;
+  line-height: 0.95;
+  white-space: nowrap;
 }
 
-.hero__name span {
-  display: inline-block;
-  background: linear-gradient(135deg, #748CAB, #F0EBD8, #8fa3be);
+.hero-name span {
+  display: inline;
+  background: linear-gradient(135deg, #748CAB, #F0EBD8, #8FA3BE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
