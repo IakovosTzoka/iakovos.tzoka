@@ -330,9 +330,9 @@ body::before {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 960px;
-  height: clamp(280px, 40vh, 480px);
-  margin-top: var(--space-6);
+  max-width: 1200px;
+  height: clamp(360px, 50vh, 620px);
+  margin-top: var(--space-3);
 }
 
 .hero__canvas {
