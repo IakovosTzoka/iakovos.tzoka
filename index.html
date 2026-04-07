@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iakovos Tzoka — Ph.D. Candidate in High Energy Physics</title>
+  <meta name="description" content="Personal site of Iakovos Tzoka, Ph.D. candidate in Applied Physics at UTA. Research in photodetector development, thin film fabrication, and particle physics instrumentation." />
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./base.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Home">
+        <!-- Atom/accelerator SVG logo -->
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <circle cx="16" cy="16" r="2.5" fill="#748CAB"/>
+          <ellipse cx="16" cy="16" rx="14" ry="5" stroke="#748CAB" stroke-width="0.8" transform="rotate(-30 16 16)" opacity="0.6"/>
+          <ellipse cx="16" cy="16" rx="14" ry="5" stroke="#748CAB" stroke-width="0.8" transform="rotate(30 16 16)" opacity="0.6"/>
+          <circle cx="7" cy="11" r="1.5" fill="#F0EBD8" opacity="0.8"/>
+        </svg>
+        I. Tzoka
+      </a>
+
+      <button class="nav__hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__title">Ph.D. Candidate &middot; High Energy &amp; Semiconductor Physics</p>
+      <h1 class="hero__name"><span>Iakovos Tzoka</span></h1>
+      <p class="hero__subtitle">
+        Building the next generation of photon detectors at the intersection of
+        thin film physics, cleanroom microfabrication, and particle physics instrumentation.
+      </p>
+      <a href="#research" class="hero__cta">
+        Explore My Research
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </a>
+    </div>
+
+    <!-- DUNE neutrino beam animation -->
+    <div class="hero__canvas-wrapper">
+      <canvas id="dune-canvas" class="hero__canvas"></canvas>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section section--alt" id="about">
+    <div class="section__inner fade-in">
+      <div class="section__header">
+        <p class="section__label">01 &mdash; About</p>
+        <h2 class="section__title">Probing the Frontier of Detection</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            I am a Ph.D. candidate in Applied Physics at the University of Texas at Arlington, working at the
+            crossroads of high-energy particle physics and semiconductor device engineering. My work focuses on
+            designing and fabricating novel photodetectors — from amorphous selenium-based VUV detectors for
+            liquid noble experiments to surface plasmon-enhanced ZnO thin-film devices for cryogenic photon detection.
+          </p>
+          <p>
+            With extensive cleanroom experience spanning sputtering, e-beam evaporation, photolithography,
+            and plasma etching, I bring an end-to-end capability from simulation (COMSOL Multiphysics) to
+            device characterization (SEM, XRD, FTIR, PL, SPV) — bridging the gap between theoretical design
+            and fabricated reality.
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__number" data-count="9" data-suffix="+">0</span>
+            <span class="stat__label">Publications</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="4">0</span>
+            <span class="stat__label">Research Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="3">0</span>
+            <span class="stat__label">Conferences</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="4">0</span>
+            <span class="stat__label">Degrees Earned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section" id="education">
+    <div class="section__inner fade-in">
+      <div class="section__header">
+        <p class="section__label">02 &mdash; Education</p>
+        <h2 class="section__title">Academic Trajectory</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <p class="timeline__date">Aug 2022 — Present</p>
+          <h3 class="timeline__degree">Ph.D. in Applied Physics</h3>
+          <p class="timeline__school">University of Texas at Arlington, USA &middot; Expected May 2027</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <p class="timeline__date">Aug 2022 — May 2025</p>
+          <h3 class="timeline__degree">M.Sc. in Applied Physics</h3>
+          <p class="timeline__school">University of Texas at Arlington, USA</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <p class="timeline__date">Aug 2018 — Mar 2022</p>
+          <h3 class="timeline__degree">B.Sc. in Physics</h3>
+          <p class="timeline__school">Texas Christian University, USA</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <p class="timeline__date">Aug 2016 — Mar 2018</p>
+          <h3 class="timeline__degree">International Baccalaureate</h3>
+          <p class="timeline__school">Pinewood American International School, Greece</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH ========== -->
+  <section class="section section--alt" id="research">
+    <div class="section__inner fade-in">
+      <div class="section__header">
+        <p class="section__label">03 &mdash; Research</p>
+        <h2 class="section__title">Experimental Programs</h2>
+      </div>
+      <div class="research__grid">
+
+        <div class="research-card">
+          <div class="research-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 12h10M12 7v10"/></svg>
+          </div>
+          <h3 class="research-card__title">Amorphous Selenium VUV Photodetectors</h3>
+          <p class="research-card__desc">
+            Designed and fabricated full photodetectors from silicon wafers, exploring vertical and lateral device geometries for liquid argon detection. Integrated trivial transfer graphene as a novel transparent electrode for cryogenic application.
+          </p>
+          <div class="research-card__tags">
+            <span class="tag">a-Se</span>
+            <span class="tag">Cryogenic</span>
+            <span class="tag">VUV</span>
+            <span class="tag">Liquid Argon</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="research-card__title">Accelerated Aging of LAPPD Photodetectors</h3>
+          <p class="research-card__desc">
+            Developed a novel pixel-based accelerated aging methodology to evaluate lifetime of Large Area Picosecond Photodetectors (LAPPDs) from Incom Inc. Identified pixel degradation trends and aging mechanisms through localized illumination tests.
+          </p>
+          <div class="research-card__tags">
+            <span class="tag">LAPPD</span>
+            <span class="tag">MCP-PMT</span>
+            <span class="tag">Aging Studies</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15 8.5 22 9.3 17 14 18 21 12 17.8 6 21 7 14 2 9.3 9 8.5"/></svg>
+          </div>
+          <h3 class="research-card__title">Surface Plasmon-Enhanced ZnO Detectors</h3>
+          <p class="research-card__desc">
+            Designed noble-metal/ZnO thin film devices for cryogenic photon detection. Used COMSOL Multiphysics to optimize film thickness and simulate piezoelectric and plasmonic behavior. Built and optimized experimental setups including laser alignment and four-point probe stations.
+          </p>
+          <div class="research-card__tags">
+            <span class="tag">ZnO</span>
+            <span class="tag">Plasmonics</span>
+            <span class="tag">COMSOL</span>
+            <span class="tag">Piezo-Photonic</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="research-card__title">ZnO Nanomaterial Studies &amp; Device Engineering</h3>
+          <p class="research-card__desc">
+            Synthesized hydrothermal ZnO micro/nanocrystals for optoelectronic and antibacterial applications. Developed characterization pipelines using LT-PL, FTIR, EDX, Auger, and SEM. Conducted UHV surface photovoltage studies under varying environmental conditions.
+          </p>
+          <div class="research-card__tags">
+            <span class="tag">ZnO Nanocrystals</span>
+            <span class="tag">Hydrothermal</span>
+            <span class="tag">SEM/FTIR</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PUBLICATIONS ========== -->
+  <section class="section" id="publications">
+    <div class="section__inner fade-in">
+      <div class="section__header">
+        <p class="section__label">04 &mdash; Publications</p>
+        <h2 class="section__title">Selected Works</h2>
+      </div>
+
+      <ul class="pub-list" role="list">
+
+        <li class="pub-item">
+          <p class="pub-item__title">Measuring the lifetime of a microchannel plate photomultiplier with accelerated localized aging</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--first">1st Author</span>
+            <span>Tzoka I., et al.</span>
+            <span>NIM-A (Tentative)</span>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <p class="pub-item__title">Vertically stacked amorphous selenium based VUV photodetectors for use in liquid noble detectors</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--first">1st Author</span>
+            <span>Tzoka I., et al.</span>
+            <span>Proceedings of Science</span>
+            <a href="https://pos.sissa.it/476/1118/" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <p class="pub-item__title">Cryogenic UV detection using stress-engineered zero-bias ZnO-thin film based Piezo-Photonic detector</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--first">Primary Co-Author</span>
+            <span>I. Tzoka</span>
+            <span>ArXiv, Nov 2025</span>
+            <a href="https://arxiv.org/abs/2511.09781" target="_blank" rel="noopener noreferrer">ArXiv</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <p class="pub-item__title">Characterization of Lateral Amorphous Selenium Photodetectors for Low-Photon and VUV Detection at Cryogenic Temperatures</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--collab">Co-Author</span>
+            <span>M. Rooks, ..., I. Tzoka</span>
+            <span>JInst, Jan 2026</span>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <p class="pub-item__title">Charge Transport and Multiplication in Lateral Amorphous Selenium Devices Under Cryogenic Conditions</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--collab">Co-Author</span>
+            <span>M. Rooks, ..., I. Tzoka</span>
+            <span>ArXiv, Jan 2026</span>
+            <a href="https://arxiv.org/pdf/2601.08971" target="_blank" rel="noopener noreferrer">ArXiv</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <p class="pub-item__title">Opportunities and challenges to study solar neutrinos with a Q-Pix pixel readout</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--collab">Co-Author</span>
+            <span>M.A. Garcia-Peris, ..., I. Tzoka</span>
+            <span>Phys. Rev. D 112, Nov 2025</span>
+            <a href="https://journals.aps.org/prd/abstract/10.1103/xq7l-lv7j" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <p class="pub-item__title">Temperature dependent optical response to visible light of YBA₂Cu₃O₇₋δ YBCO thin films</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--collab">Co-Author</span>
+            <span>V. Khichar, ..., I. Tzoka</span>
+            <span>ArXiv, Jul 2025</span>
+            <a href="https://arxiv.org/abs/2507.07866" target="_blank" rel="noopener noreferrer">ArXiv</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <p class="pub-item__title">First operation of a multi-channel Q-Pix prototype: measuring transverse electron diffusion in a gas time projection chamber</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--collab">Co-Author</span>
+            <span>N. Hoch, ..., I. Tzoka</span>
+            <span>JInst 19, 2024</span>
+            <a href="https://iopscience.iop.org/article/10.1088/1748-0221/19/06/P06007" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <p class="pub-item__title">Influence of Surface Properties and Microbial Growth Media on Antibacterial Action of ZnO</p>
+          <div class="pub-item__meta">
+            <span class="pub-badge pub-badge--collab">Co-Author</span>
+            <span>D. Johnson, ..., I. Tzoka</span>
+            <span>Coatings 12, 2022</span>
+            <a href="https://doi.org/10.3390/coatings12111648" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section--alt" id="skills">
+    <div class="section__inner fade-in">
+      <div class="section__header">
+        <p class="section__label">05 &mdash; Technical Skills</p>
+        <h2 class="section__title">Instrumentation &amp; Toolbox</h2>
+      </div>
+      <div class="skills__grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Deposition</h3>
+          <div class="skill-group__items">
+            <span class="skill-chip">Thermal Evaporation</span>
+            <span class="skill-chip">RF Sputtering</span>
+            <span class="skill-chip">DC Sputtering</span>
+            <span class="skill-chip">E-Beam Evaporation</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Microfabrication</h3>
+          <div class="skill-group__items">
+            <span class="skill-chip">Photolithography</span>
+            <span class="skill-chip">Spin Coating</span>
+            <span class="skill-chip">Wet Etching</span>
+            <span class="skill-chip">Plasma Ashing</span>
+            <span class="skill-chip">Reactive Ion Etching</span>
+            <span class="skill-chip">Lift-off</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Characterization</h3>
+          <div class="skill-group__items">
+            <span class="skill-chip">SEM</span>
+            <span class="skill-chip">EDS</span>
+            <span class="skill-chip">XRD</span>
+            <span class="skill-chip">FTIR</span>
+            <span class="skill-chip">Photoluminescence</span>
+            <span class="skill-chip">SPV</span>
+            <span class="skill-chip">Raman</span>
+            <span class="skill-chip">UV-Vis-IR</span>
+            <span class="skill-chip">Confocal Microscopy</span>
+            <span class="skill-chip">I-V/C-V Probe</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Programming</h3>
+          <div class="skill-group__items">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">Java</span>
+            <span class="skill-chip">HTML/CSS</span>
+            <span class="skill-chip">LaTeX</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Simulation &amp; Design</h3>
+          <div class="skill-group__items">
+            <span class="skill-chip">COMSOL Multiphysics</span>
+            <span class="skill-chip">OriginLab</span>
+            <span class="skill-chip">KiCAD</span>
+            <span class="skill-chip">Fusion 360</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Materials</h3>
+          <div class="skill-group__items">
+            <span class="skill-chip">a-Se</span>
+            <span class="skill-chip">ZnO</span>
+            <span class="skill-chip">Ag / Au / Ti / Cr</span>
+            <span class="skill-chip">SiO₂ / Si₃N₄</span>
+            <span class="skill-chip">Graphene</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONFERENCES ========== -->
+  <section class="section" id="conferences">
+    <div class="section__inner fade-in">
+      <div class="section__header">
+        <p class="section__label">06 &mdash; Conferences</p>
+        <h2 class="section__title">Presentations</h2>
+      </div>
+      <div class="conferences__list">
+
+        <div class="conference-item">
+          <span class="conference-item__year">2024</span>
+          <div class="conference-item__info">
+            <p class="conference-item__title">Vertically Stacked a-Se Based VUV Photodetectors</p>
+            <p class="conference-item__venue">International Conference on High Energy Physics (ICHEP), Prague, Czech Republic</p>
+          </div>
+        </div>
+
+        <div class="conference-item">
+          <span class="conference-item__year">2023</span>
+          <div class="conference-item__info">
+            <p class="conference-item__title">Recent Results from Pixel-Based Accelerated Aging of LAPPD</p>
+            <p class="conference-item__venue">CPAD 2023, Stanford Linear Accelerator Center (SLAC), Menlo Park, CA</p>
+          </div>
+        </div>
+
+        <div class="conference-item">
+          <span class="conference-item__year">2021</span>
+          <div class="conference-item__info">
+            <p class="conference-item__title">ZnO Antibacterial Studies</p>
+            <p class="conference-item__venue">Greek Union of Physicists &amp; Aristotle University, Greece</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section--alt contact" id="contact">
+    <div class="section__inner fade-in">
+      <div class="section__header" style="text-align:center;">
+        <p class="section__label" style="justify-content:center;">07 &mdash; Contact</p>
+        <h2 class="section__title">Get in Touch</h2>
+      </div>
+      <p class="contact__text">
+        Interested in collaboration, have questions about my research, or looking for a driven experimentalist? I'd be happy to connect.
+      </p>
+      <div class="contact__links">
+        <a href="mailto:iakovos.tzoka@uta.edu" class="contact__link" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+        <a href="tel:+16825214646" class="contact__link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.36 1.6.68 2.35a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.75.32 1.54.55 2.35.68A2 2 0 0122 16.92z"/></svg>
+          Phone
+        </a>
+        <a href="https://www.linkedin.com" class="contact__link" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://www.researchgate.net" class="contact__link" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12h6M12 9v6"/></svg>
+          ResearchGate
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Iakovos Tzoka &middot; University of Texas at Arlington</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./dune_animation.js" defer></script>
+  <script src="./app.js" defer></script>
+
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
