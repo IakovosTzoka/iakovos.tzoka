@@ -724,7 +724,10 @@ body::before {
   color: var(--color-accent);
 }
 
-
+.pub-author-highlight {
+  color: var(--color-text);
+  font-weight: 700;
+}
 /* ========================================
    SKILLS
    ======================================== */
