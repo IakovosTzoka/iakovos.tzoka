@@ -28,6 +28,8 @@
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', hamburger.classList.contains('open'));
+      nav.classList.remove('nav--hidden');
     });
 
     // Close on link click
@@ -35,7 +37,17 @@
       a.addEventListener('click', () => {
         hamburger.classList.remove('open');
         navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.focus();
+      }
     });
   }
 
@@ -90,7 +102,8 @@
   // ========== SMOOTH SCROLL for CTA ==========
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener('click', (e) => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      const target = href === '#' ? document.documentElement : document.querySelector(href);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });

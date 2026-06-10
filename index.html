@@ -33,16 +33,15 @@
         I. Tzoka
       </a>
 
-      <button class="nav__hamburger" aria-label="Toggle navigation menu">
+      <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-menu">
         <span></span><span></span><span></span>
       </button>
 
-      <ul class="nav__links" role="list">
+      <ul class="nav__links" id="main-menu" role="list">
         <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#conferences">Presentations</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -51,16 +50,27 @@
   <!-- ========== HERO ========== -->
   <section class="hero" id="hero">
     <div class="hero__content">
-      <p class="hero__title">Ph.D. Candidate &middot; High Energy &amp; Semiconductor Physics</p>
+      <div class="hero__eyebrow">
+        <p class="hero__title">Experimental physicist &middot; UTA</p>
+        <span class="hero__status"><span></span>Open to collaboration</span>
+      </div>
       <h1 class="hero__name"><span>Iakovos Tzoka</span></h1>
       <p class="hero__subtitle">
-        Building the next generation of photon detectors at the intersection of
-        thin film physics, cleanroom microfabrication, and particle physics instrumentation.
+        I build next-generation photon detectors where thin-film physics,
+        cleanroom microfabrication, and particle instrumentation meet.
       </p>
-      <a href="#research" class="hero__cta">
-        Explore My Research
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-      </a>
+      <div class="hero__actions">
+        <a href="#research" class="hero__cta">
+          Explore research
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+        <a href="#publications" class="hero__cta hero__cta--secondary">Selected publications</a>
+      </div>
+      <ul class="hero__focus" role="list" aria-label="Research focus">
+        <li><span>01</span> VUV photodetectors</li>
+        <li><span>02</span> Cryogenic instrumentation</li>
+        <li><span>03</span> Thin-film devices</li>
+      </ul>
     </div>
 
     <!-- DUNE neutrino beam animation -->
@@ -240,8 +250,8 @@
       <ul class="pub-list" role="list">
 
         <li class="pub-item">
-          <p class="pub-item__title">Measuring the lifetime of a microchannel plate photomultiplier with accelerated localized aging</p>
-          <div class="pub-item__meta">
+          <p class="pub-item-title">Measuring the lifetime of a microchannel plate photomultiplier with accelerated localized aging</p>
+          <div class="pub-item-meta">
             <span class="pub-badge pub-badge--first">1st Author</span>
             <span><span class="pub-author-highlight">Tzoka I., et al.</span>
             <span>NIM-A (Tentative)</span>
@@ -540,9 +550,9 @@
   <!-- ========== CONTACT ========== -->
   <section class="section section--alt contact" id="contact">
     <div class="section__inner fade-in">
-      <div class="section__header" style="text-align:center;">
-        <p class="section__label" style="justify-content:center;">07 &mdash; Contact</p>
-        <h2 class="section__title">Get in Touch</h2>
+      <div class="section__header contact__header">
+        <p class="section__label">07 &mdash; Contact</p>
+        <h2 class="section__title">Let’s build what comes next.</h2>
       </div>
       <p class="contact__text">
         Interested in collaboration, have questions about my research, or looking for a driven experimentalist? I'd be happy to connect.
@@ -576,67 +586,5 @@
   <!-- Scripts -->
   <script src="./dune_animation.js" defer></script>
   <script src="./app.js" defer></script>
-
-<script data-pplx-inline-edit>
-(function(){
-  if(window===window.top)return;
-  function inlineAll(orig,clone){
-    if(orig.nodeType!==1)return;
-    try{
-      var cs=getComputedStyle(orig);
-      var t='';
-      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
-      clone.style.cssText=t;
-    }catch(e){}
-    var oc=orig.children,cc=clone.children;
-    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
-  }
-  function stripExternal(clone){
-    var imgs=clone.querySelectorAll('img');
-    for(var i=0;i<imgs.length;i++){
-      var s=imgs[i].getAttribute('src');
-      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
-    }
-    var all=clone.querySelectorAll('*');
-    for(var i=0;i<all.length;i++){
-      var st=all[i].style.cssText;
-      if(st&&st.indexOf('url(')>=0){
-        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
-      }
-    }
-  }
-  window.addEventListener('message',function(e){
-    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
-    var scrollX=window.scrollX||window.pageXOffset||0;
-    var scrollY=window.scrollY||window.pageYOffset||0;
-    var w=window.innerWidth,h=window.innerHeight;
-    try{
-      var clone=document.documentElement.cloneNode(true);
-      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
-      for(var i=0;i<rm.length;i++){rm[i].remove();}
-      inlineAll(document.documentElement,clone);
-      stripExternal(clone);
-      var html=new XMLSerializer().serializeToString(clone);
-      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
-        +'<foreignObject width="100%" height="100%">'
-        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
-        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
-        +html+'</div></div></foreignObject></svg>';
-      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
-      var img=new Image();
-      img.onload=function(){
-        var c=document.createElement('canvas');c.width=w;c.height=h;
-        c.getContext('2d').drawImage(img,0,0);
-        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
-      };
-      img.onerror=function(){
-        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
-      };
-      img.src=svgUrl;
-    }catch(err){
-      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
-    }
-  });
-})();
-</script></body>
+</body>
 </html>
